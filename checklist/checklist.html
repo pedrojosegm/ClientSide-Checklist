@@ -137,75 +137,94 @@
         <h2>Developer Checklist</h2>
         <input type="text" class="input-block-level" placeholder="Project Name">
         <input type="password" class="input-block-level" placeholder="Project Manager">
-        <div class="checkTitle">
-	        <label class="checkbox">
-	          <input type="checkbox" value="html_validation"> HTML Validation
-	        </label>
-        </div>
-         <div>
-         	<p class="help-block">
-         		<a href="http://validator.w3.org/" target="_blank">W3C Validator</a> <br /> 
-         		<a href="https://github.com/SublimeLinter/SublimeLinter" target="_blank">SublimeLinter</a> uses 
-         		<a href="http://w3c.github.com/tidy-html5/" target="_blank">Tidy-html5</a>
-         	</p>
-         </div>
-        <textarea value="html_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
         
+        <!-- ************************************************************************************************************ -->
         <div class="checkTitle">
-        	<label class="checkbox">
-          		<input type="checkbox" value="jslint"> JSLint
-        	</label>
-        </div>
-        <p class="help-block">
-         	<a href="http://www.jslint.com/" target="_blank">JSLint</a> <br /> 
-         	<a href="https://github.com/SublimeLinter/SublimeLinter" target="_blank">SublimeLinter</a> uses 
-         	<a href="http://jshint.org/" target="_blank">Jshint</a> or
-         	<a href="http://www.jslint.com/" target="_blank">JSLint</a> if configured
-         </p>
+			<label class="checkbox">
+				<input type="checkbox" value="html_validation">
+					<p class="titlePos">HTML Validation</p>
+					<p class="infoPos">+info</p>
+			</label>
+		</div>				         
+		<p class="help-block moreInfo" >
+			<a href="http://validator.w3.org/" target="_blank">W3C Validator</a> <br /> 
+			<a href="https://github.com/SublimeLinter/SublimeLinter" target="_blank">SublimeLinter</a> uses 
+			<a href="http://w3c.github.com/tidy-html5/" target="_blank">Tidy-html5</a>
+		</p>
+		<textarea value="html_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
+        
+        <!-- ************************************************************************************************************ -->
+      	<div class="checkTitle">
+	   		<label class="checkbox">
+	        	<input type="checkbox" value="jslint">
+	        	<p class="titlePos">JSLint</p>
+	        	<p class="infoPos">+info</p>
+	       	</label>
+	  	</div>
+	    <p class="help-block moreInfo">
+	    	<a href="http://www.jslint.com/" target="_blank">JSLint</a> <br /> 
+	        <a href="https://github.com/SublimeLinter/SublimeLinter" target="_blank">SublimeLinter</a> uses 
+	        <a href="http://jshint.org/" target="_blank">Jshint</a> or
+	        <a href="http://www.jslint.com/" target="_blank">JSLint</a> if configured
+	    </p>
         <textarea value="jslint_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
         
-        <div class="checkTitle">
-	        <label class="checkbox">
-	          <input type="checkbox" value="minify"> Minify CSS and JS for production
-	        </label>
-        </div>
-        <p class="help-block">
-         	<a href="http://closure-compiler.appspot.com/home" target="_blank">Closer-compiler</a> can be used online or integrated with build processes <br />
-         	<a href="http://lisperator.net/uglifyjs/" target="_blank">Uglifyjs</a> <br />
-         	<a href="http://requirejs.org/docs/optimization.html" target="_blank">Requirejs</a> has a quite flexible optimization tool for AMD based projects
-         </p>
+        <!-- ************************************************************************************************************ -->
+       
+	    <div class="checkTitle">
+			<label class="checkbox">
+		    	<input type="checkbox" value="minify">
+		    	<p class="titlePos">Minify CSS and JS for production</p>
+	        	<p class="infoPos">+info</p>
+		    </label>
+	    </div>
+	    <p class="help-block moreInfo">
+	    	<a href="http://closure-compiler.appspot.com/home" target="_blank">Closer-compiler</a> can be used online or integrated with build processes <br />
+	        <a href="http://lisperator.net/uglifyjs/" target="_blank">Uglifyjs</a> <br />
+	        <a href="http://requirejs.org/docs/optimization.html" target="_blank">Requirejs</a> has a quite flexible optimization tool for AMD based projects
+	    </p>
         <textarea value="minify_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
         
-        <div class="checkTitle">
-	        <label class="checkbox">
-	          <input type="checkbox" value="google_pagespeed"> Google PageSpeed  
-	        </label>
-        </div>
-        <p class="help-block">
-         	<a href="https://developers.google.com/speed/pagespeed/" target="_blank">PageSpeed</a>
-         </p>
+        <!-- ************************************************************************************************************ -->
+       	<div class="checkTitle">
+			<label class="checkbox">
+		    	<input type="checkbox" value="google_pagespeed">   
+		        <p class="titlePos">Google PageSpeed</p>
+	        	<p class="infoPos">+info</p>
+		    </label>
+	   	</div>
+	    <p class="help-block moreInfo moreInfoLess">
+	    	<a href="https://developers.google.com/speed/pagespeed/" target="_blank">PageSpeed</a>
+	    </p>
         <textarea value="pagespeed_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
         
+        <!-- ************************************************************************************************************ -->
         <div class="checkTitle">
-	        <label class="checkbox">
-	          <input type="checkbox" value="image_opt"> Image optimization
-	        </label>
-        </div>
-        <p class="help-block">
-         	This includes using png compression, sprites and sometimes going to JPG if the size of a large image in PNG is un-acceptable
-         </p>
+			<label class="checkbox">
+		    	<input type="checkbox" value="image_opt">
+		    	<p class="titlePos">Image optimization</p>
+	        	<p class="infoPos">+info</p>
+		    </label>
+	   	</div>
+	    <p class="help-block moreInfo">
+	    	This includes using png compression, sprites and sometimes<br/>going to JPG if the size of a large image in PNG is un-acceptable
+	    </p>
         <textarea value="image_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
         
+        <!-- ************************************************************************************************************ -->
         <div class="checkTitle">
-	        <label class="checkbox">
-	          <input type="checkbox" value="browsers"> Check in all browsers 
-	        </label>
-        </div>
-        <p class="help-block">
-         	Project/scope requires (Mobile/Tablet/FF/Chrome/Safari/IE8-9-10)
-         </p>
+			<label class="checkbox">
+				<input type="checkbox" value="browsers"> 
+				<p class="titlePos">Check in all browsers</p>
+	        	<p class="infoPos">+info</p> 
+		    </label>
+	   	</div>
+	    <p class="help-block moreInfo">
+	    	Project/scope requires<br/>(Mobile/Tablet/FF/Chrome/Safari/IE8-9-10)
+	    </p>
         <textarea value="browsers_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
         
+        <!-- ************************************************************************************************************ -->
         <button class="btn btn-large btn-primary" type="submit">Send</button>
       </form>
 
@@ -219,7 +238,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
@@ -232,6 +251,7 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
-	<script src="js/accordion.js"></script>
+	<script src="js/moreInfo.js"></script>
+
   </body>
 </html>

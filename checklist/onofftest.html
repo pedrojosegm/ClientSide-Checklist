@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>HTML</title>
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link href="css/bootstrap.css" rel="stylesheet">
+	    <link href="css/style.css" rel="stylesheet">
+	   
+	    <style type="text/css">
+	      body {
+	        padding-top: 40px;
+	        padding-bottom: 40px;
+	        background-color: silver;
+	      }
+	
+	      .form-signin {
+	        max-width: 500px;
+	        padding: 19px 29px 29px;
+	        margin: 0 auto 20px;
+	        background-color: #fff;
+	        border: 1px solid #e5e5e5;
+	        -webkit-border-radius: 5px;
+	           -moz-border-radius: 5px;
+	                border-radius: 5px;
+	        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	      }
+	      .form-signin .form-signin-heading,
+	      .form-signin .checkbox {
+	        margin-bottom: 10px;
+	      }
+	      .form-signin input[type="text"],
+	      .form-signin input[type="password"] {
+	        font-size: 16px;
+	        height: auto;
+	        margin-bottom: 15px;
+	        padding: 7px 9px;
+	      }
+	
+	    </style>
+	</head>
+
+	<body>
+		<div>
+			<header>
+			
+			</header>
+
+			<div>
+				<form class="form-signin">
+					<div class="toggle">
+						<div class="checkTitle">
+					        <label class="checkbox">
+					          <input type="checkbox" value="html_validation"> HTML Validation
+					        </label>
+				        </div>
+				         <div>
+				         	<p class="help-block moreInfo" >
+				         		<a href="http://validator.w3.org/" target="_blank">W3C Validator</a> <br /> 
+				         		<a href="https://github.com/SublimeLinter/SublimeLinter" target="_blank">SublimeLinter</a> uses 
+				         		<a href="http://w3c.github.com/tidy-html5/" target="_blank">Tidy-html5</a>
+				         	</p>
+				         </div>
+				    </div>
+				    <textarea value="html_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
+			        
+				</form>
+			</div>
+
+			<footer>
+				
+			</footer>
+		</div>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+			$('div.checkTitle').hover(function() {$('div.help-block').show()});
+			$('div.help-block').hover(function() {}, function() {$('div.help-block').hide()});
+		</script>
+	</body>
+</html>
