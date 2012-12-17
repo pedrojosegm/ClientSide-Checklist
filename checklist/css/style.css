@@ -1,0 +1,21 @@
+
+
+textarea{
+	width: 486px;
+	max-width:486px;
+	max-height: 200px;
+}
+
+h1{
+	font-size:50px;
+}
+
+.checkTitle{
+	color:white;
+	border-radius:4px;
+	padding-left:5px;
+	margin-bottom:5px;
+	width:auto;
+	height:22px;
+	background-color: #08C;
+}
