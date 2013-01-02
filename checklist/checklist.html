@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>CLient-Side Developer Checklist</title>
+    <title>Client-Side Developer Checklist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,248 +10,151 @@
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        background-color: silver;
-      }
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
-      .form-signin {
-        max-width: 500px;
-        padding: 19px 29px 29px;
-        margin: 0 auto 20px;
-        background-color: #fff;
-        border: 1px solid #e5e5e5;
-        -webkit-border-radius: 5px;
-           -moz-border-radius: 5px;
-                border-radius: 5px;
-        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-                box-shadow: 0 1px 2px rgba(0,0,0,.05);
-      }
-      .form-signin .form-signin-heading,
-      .form-signin .checkbox {
-        margin-bottom: 10px;
-      }
-      .form-signin input[type="text"],
-      .form-signin input[type="password"] {
-        font-size: 16px;
-        height: auto;
-        margin-bottom: 15px;
-        padding: 7px 9px;
-      }
-
-    </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+ 	<link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
-  <body>
-
-   <!--<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Client-Side</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- <div class="container">
-
-     
-      <div class="hero-unit">
-        <h1>Client-Side<br /> Developer Checklist</h1>
-        <p> </p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
-
-      
-      <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-    
-    </div> <!-- /container -->
-    
+  <body>    
      <div class="container">
 
-      <form class="form-signin">
-        <h1 class="form-signin-heading">Client-Side</h1>
-        <h2>Developer Checklist</h2>
-        <input type="text" class="input-block-level" placeholder="Project Name">
-        <input type="password" class="input-block-level" placeholder="Project Manager">
+      <form id="checklist_form" class="form-signin" action="sendChecklist.php" method="post">
+        <fieldset>
+        	<h1 class="form-signin-heading">Client-Side</h1>
+        	<h2>Developer Checklist</h2>
+        	<label><input type="text" class="input-block-level" name="project" required="required" placeholder="Project Name"></label>
+        	<label><input type="text" class="input-block-level" name="pm" required="required" placeholder="Project Manager"></label>
+        	<label><input type="text" class="input-block-level" name="developer" required="required" placeholder="Developer Name"></label>
+        	<label><input type="text" class="input-block-level email" name="mail" required="required" id="cemail" placeholder="Your e-mail adress"></label>
+        </fieldset>
         
         <!-- ************************************************************************************************************ -->
-        <div class="checkTitle">
-			<label class="checkbox">
-				<input type="checkbox" value="html_validation">
-					<p class="titlePos">HTML Validation</p>
-					<p class="infoPos">+info</p>
-			</label>
-		</div>				         
-		<p class="help-block moreInfo" >
-			<a href="http://validator.w3.org/" target="_blank">W3C Validator</a> <br /> 
-			<a href="https://github.com/SublimeLinter/SublimeLinter" target="_blank">SublimeLinter</a> uses 
-			<a href="http://w3c.github.com/tidy-html5/" target="_blank">Tidy-html5</a>
-		</p>
-		<textarea value="html_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
+        <div class="valueWrapper">
+	        <div class="checkTitle">
+				<label class="checkbox">
+					<input type="checkbox" name="html_validation">
+						<span class="titlePos">HTML Validation</span>
+						<span class="infoPos">+info</span>
+				</label>
+			</div>				         
+			<p class="help-block moreInfo" >
+				<a href="http://validator.w3.org/" target="_blank">W3C Validator</a> <br /> 
+				<a href="https://github.com/SublimeLinter/SublimeLinter" target="_blank">SublimeLinter</a> uses 
+				<a href="http://w3c.github.com/tidy-html5/" target="_blank">Tidy-html5</a>
+			</p>
+			<label><textarea name="html_notes" placeholder="Important Notes"></textarea></label>
+        </div>
         
         <!-- ************************************************************************************************************ -->
-      	<div class="checkTitle">
-	   		<label class="checkbox">
-	        	<input type="checkbox" value="jslint">
-	        	<p class="titlePos">JSLint</p>
-	        	<p class="infoPos">+info</p>
-	       	</label>
-	  	</div>
-	    <p class="help-block moreInfo">
-	    	<a href="http://www.jslint.com/" target="_blank">JSLint</a> <br /> 
-	        <a href="https://github.com/SublimeLinter/SublimeLinter" target="_blank">SublimeLinter</a> uses 
-	        <a href="http://jshint.org/" target="_blank">Jshint</a> or
-	        <a href="http://www.jslint.com/" target="_blank">JSLint</a> if configured
-	    </p>
-        <textarea value="jslint_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
+      	<div class="valueWrapper">
+	      	<div class="checkTitle">
+		   		<label class="checkbox">
+		        	<input type="checkbox" name="jslint">
+		        	<span class="titlePos">JSLint</span>
+		        	<span class="infoPos">+info</span>
+		       	</label>
+		  	</div>
+		    <p class="help-block moreInfo">
+		    	<a href="http://www.jslint.com/" target="_blank">JSLint</a> <br /> 
+		        <a href="https://github.com/SublimeLinter/SublimeLinter" target="_blank">SublimeLinter</a> uses 
+		        <a href="http://jshint.org/" target="_blank">Jshint</a> or
+		        <a href="http://www.jslint.com/" target="_blank">JSLint</a> if configured
+		    </p>
+	       <label> <textarea name="jslint_notes" placeholder="Important Notes"></textarea></label>
+        </div>
         
         <!-- ************************************************************************************************************ -->
-       
-	    <div class="checkTitle">
-			<label class="checkbox">
-		    	<input type="checkbox" value="minify">
-		    	<p class="titlePos">Minify CSS and JS for production</p>
-	        	<p class="infoPos">+info</p>
-		    </label>
-	    </div>
-	    <p class="help-block moreInfo">
-	    	<a href="http://closure-compiler.appspot.com/home" target="_blank">Closer-compiler</a> can be used online or integrated with build processes <br />
-	        <a href="http://lisperator.net/uglifyjs/" target="_blank">Uglifyjs</a> <br />
-	        <a href="http://requirejs.org/docs/optimization.html" target="_blank">Requirejs</a> has a quite flexible optimization tool for AMD based projects
-	    </p>
-        <textarea value="minify_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
+       	<div class="valueWrapper">
+		    <div class="checkTitle">
+				<label class="checkbox">
+			    	<input type="checkbox" name="minify">
+			    	<span class="titlePos">Minify CSS and JS</span>
+		        	<span class="infoPos">+info</span>
+			    </label>
+		    </div>
+		    <p class="help-block moreInfo moreInfoMore">
+		    	<a href="http://closure-compiler.appspot.com/home" target="_blank">Closer-compiler</a> can be used online or integrated with build processes <br />
+		        <a href="http://lisperator.net/uglifyjs/" target="_blank">Uglifyjs</a> <br />
+		        <a href="http://requirejs.org/docs/optimization.html" target="_blank">Requirejs</a> has a quite flexible optimization tool for AMD based projects
+		    </p>
+	       <label><textarea name="minify_notes" placeholder="Important Notes"></textarea></label>
+        </div>
         
         <!-- ************************************************************************************************************ -->
-       	<div class="checkTitle">
-			<label class="checkbox">
-		    	<input type="checkbox" value="google_pagespeed">   
-		        <p class="titlePos">Google PageSpeed</p>
-	        	<p class="infoPos">+info</p>
-		    </label>
-	   	</div>
-	    <p class="help-block moreInfo moreInfoLess">
-	    	<a href="https://developers.google.com/speed/pagespeed/" target="_blank">PageSpeed</a>
-	    </p>
-        <textarea value="pagespeed_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
+       	<div class="valueWrapper">
+	       	<div class="checkTitle">
+				<label class="checkbox">
+			    	<input type="checkbox" name="google_pagespeed">   
+			        <span class="titlePos">Google PageSpeed</span>
+		        	<span class="infoPos">+info</span>
+			    </label>
+		   	</div>
+		    <p class="help-block moreInfo moreInfoLess">
+		    	<a href="https://developers.google.com/speed/pagespeed/" target="_blank">PageSpeed</a>
+		    </p>
+	        <label><textarea name="pagespeed_notes" placeholder="Important Notes"></textarea></label>
+        </div>
         
         <!-- ************************************************************************************************************ -->
-        <div class="checkTitle">
-			<label class="checkbox">
-		    	<input type="checkbox" value="image_opt">
-		    	<p class="titlePos">Image optimization</p>
-	        	<p class="infoPos">+info</p>
-		    </label>
-	   	</div>
-	    <p class="help-block moreInfo">
-	    	This includes using png compression, sprites and sometimes<br/>going to JPG if the size of a large image in PNG is un-acceptable
-	    </p>
-        <textarea value="image_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
+        <div class="valueWrapper">
+	        <div class="checkTitle">
+				<label class="checkbox">
+			    	<input type="checkbox" name="image_opt">
+			    	<span class="titlePos">Image optimization</span>
+		        	<span class="infoPos">+info</span>
+			    </label>
+		   	</div>
+		    <p class="help-block moreInfo">
+		    	This includes using png compression, sprites and sometimes<br/>going to JPG if the size of a large image in PNG is un-acceptable
+		    </p>
+	        <label><textarea name="image_notes" placeholder="Important Notes"></textarea></label>
+        </div>
         
         <!-- ************************************************************************************************************ -->
-        <div class="checkTitle">
-			<label class="checkbox">
-				<input type="checkbox" value="browsers"> 
-				<p class="titlePos">Check in all browsers</p>
-	        	<p class="infoPos">+info</p> 
-		    </label>
-	   	</div>
-	    <p class="help-block moreInfo">
-	    	Project/scope requires<br/>(Mobile/Tablet/FF/Chrome/Safari/IE8-9-10)
-	    </p>
-        <textarea value="browsers_notes" rows="2" cols="800" placeholder="Important Notes"></textarea>
+        <div class="valueWrapper">
+	        <div class="checkTitle">
+				<label class="checkbox">
+					<input type="checkbox" name="browsers"> 
+					<span class="titlePos">Check in all browsers</span>
+		        	<span class="infoPos">+info</span> 
+			    </label>
+		   	</div>
+		    <p class="help-block moreInfo">
+		    	Project/scope requires:<br/>Mobile / Tablet / Firefox / Chrome / Safari / IE8-9-10
+		    </p>
+	        <label><textarea name="browsers_notes" placeholder="Important Notes"></textarea></label>
+        </div>
         
         <!-- ************************************************************************************************************ -->
-        <button class="btn btn-large btn-primary" type="submit">Send</button>
+        
+        <hr/>
+        <p>Additional e-mails: (Client-Side Leads and Tech Manager already included) </p>
+        <label><textarea name="more_emails" placeholder="Separate e-mails using comma"></textarea></label>
+        
+        <button class="btn btn-large btn-primary centerSendButton" type="submit">Send</button>
       </form>
 
   	<footer>
-    
-      </footer>
-
-
+  		
+  	</footer>
+  	
     </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
 	<script src="js/moreInfo.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	
+	<script>
+  		$(document).ready(function(){
+    		$("#checklist_form").validate();
+  		});
+ 	</script>
+
 
   </body>
 </html>
